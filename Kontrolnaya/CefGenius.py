@@ -34,7 +34,7 @@ while i < len(a):
         na -= 1
     if a[i][0] == "L" and int(NN) == -90:
         na += 1
-    if a[i][0] == "L" and int(NN) == +90:
+    if a[i][0] == "L" and int(NN) == 90:
         na -= 1
 
     if na == -1:
@@ -61,8 +61,26 @@ while i < len(a):
         na -= 2
     if a[i][0] == "L" and int(NN) == -180:
         na += 2
-    if a[i][0] == "L" and int(NN) == +180:
+    if a[i][0] == "L" and int(NN) == 180:
         na -= 2
+
+    if a[i][0] == "R" and int(NN) == 270:
+        na += 3
+    if a[i][0] == "R" and int(NN) == -270:
+        na -= 3
+    if a[i][0] == "L" and int(NN) == -270:
+        na += 3
+    if a[i][0] == "L" and int(NN) == 270:
+        na -= 3
+
+    if a[i][0] == "R" and int(NN) == 360:
+        na += 4
+    if a[i][0] == "R" and int(NN) == -360:
+        na -= 4
+    if a[i][0] == "L" and int(NN) == -360:
+        na += 4
+    if a[i][0] == "L" and int(NN) == 360:
+        na -= 4
 
     if a[i][0] == "F":
         if na == 0:
